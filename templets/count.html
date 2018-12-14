@@ -1,0 +1,16 @@
+<h1> You have {{counttext}} text</h1>
+<a href= " {% url 'home' %}"> trun to home page </a>
+
+<h2>this is your text:</h2>
+{{fulltext  }}
+
+<h1> word count</h1>
+
+{% for word , counttolal in worddictionary  %}
+
+{{word }}  -   {{ counttolal }}  <br/>
+
+
+{% endfor %}
+
+
